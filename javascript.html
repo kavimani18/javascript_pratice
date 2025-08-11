@@ -85,9 +85,101 @@
     console.log(a + b);
     console.log(Number(a) + b);
 
+   console.clear();
+//------------------------------------------------------------
+    // 11.08.25
+
+    //1
+
+    let n = prompt("Enter the number");
+
+    if (n > 0) {
+        console.log(n + " is Positive Number");
+    }
+    else if (n < 0) {
+        console.log(n + " is negative Number");
+    }
+    else {
+        console.log("Zero");
+    }
+
+
+
+    //2
+
+    let month = parseInt(prompt("Enter the month"));
+
+    switch (month) {
+        case 1: console.log("January");
+            break;
+
+        case 2: console.log("february");
+            break;
+
+        case 3: console.log("March");
+            break;
+
+        case 4: console.log("April");
+            break;
+
+        case 5: console.log("May");
+            break;
+
+        case 6: console.log("June");
+            break;
+        case 7: console.log("July");
+            break;
+
+        case 8: console.log("August");
+            break;
+
+        case 9: console.log("September");
+            break;
+
+        case 10: console.log("October");
+            break;
+
+        case 11: console.log("November");
+            break;
+
+        case 12: console.log("December");
+            break;
+    }
+
+
+    //3
+
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${i} * 7 = ${i * 7}`);
+    }
+
+
+
+    //4
+    let colors = ["Black", "Red", "Blue", "Grey", "White"];
+
+    for (let c of colors) {
+        console.log(c.toUpperCase());
+    }
+
+    //5
+
+    let cars =
+    {
+        brand: "Suzuki",
+        model: "Swift",
+        year: 2004
+    }
+
+
+    for (let key in cars) {
+        console.log(`${key} : ${cars[key]}`);
+    }
+
 
 
 
 </script>
+
 
 

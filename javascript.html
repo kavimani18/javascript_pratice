@@ -28,7 +28,7 @@
 
     let num1 = 20;
     let num2 = num1++ + --num1;
-    console.log(num1, num2); */
+    console.log(num1, num2); 
 
      
   // 08-07-25
@@ -174,12 +174,70 @@
 
     for (let key in cars) {
         console.log(`${key} : ${cars[key]}`);
+    } */
+
+      // 12.08.25
+    
+    //1
+
+    var magNum = prompt("Enter the number");// 21
+    function isMagicNumber(n) {
+        if (n % 3 == 0 && n % 7 == 0) {
+            console.log("it's magic!");
+        }
+        else {
+            console.log("Not magic");
+        }
     }
+
+    isMagicNumber(magNum);
+
+    //2
+    var shoutName = function (sName) {
+        console.log(sName.toUpperCase() + "!!!");
+
+    }
+    shoutName("javascript");
+
+    //3
+    let tellFortune = (name, place = "unkown") => {
+
+        console.log(`Dear ${name} you will travel to ${place} soon !`);
+    }
+    tellFortune("arya")
+
+
+    //4
+    function scopeDetective() {
+        if (true) {
+            var v = "var ";
+            let l = "let";
+            const c = "const";
+
+            console.log(v);
+            console.log(l);
+            console.log(c);
+
+        }
+        console.log(v);
+        //  console.log(l); // can't access
+        // console.log(c); // can't access
+
+    }
+    scopeDetective();
+
+    //5
+    let sumNumbers = (a, b) => {
+        return a + b;
+    }
+    let sum = sumNumbers(5, 6);
+    console.log(sum);
 
 
 
 
 </script>
+
 
 
 

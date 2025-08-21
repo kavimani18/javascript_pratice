@@ -174,7 +174,7 @@
 
     for (let key in cars) {
         console.log(`${key} : ${cars[key]}`);
-    } */
+    } 
 
       // 12.08.25
     
@@ -231,12 +231,38 @@
         return a + b;
     }
     let sum = sumNumbers(5, 6);
-    console.log(sum);
+    console.log(sum); */
+   
+   
+   // Greating 21/08
+
+    const d = new Date();
+    let t = d.getHours();
+
+    function greating(t) {
+        if (t >= 5 && t <= 12) {
+            return "Good Morning";
+        }
+
+        else if (t >= 12.01 && t <= 17) {
+            return "Good Afternoon"
+
+        }
+        else {
+            return "good Evening"
+        }
+    }
+
+    let period = greating(t)
+    console.log(`Current Time ${t}:00 = ${period}`);
+
+
 
 
 
 
 </script>
+
 
 
 
